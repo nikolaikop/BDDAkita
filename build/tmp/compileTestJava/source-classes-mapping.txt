@@ -1,0 +1,18 @@
+ru/netology/data/DataHelper.java
+ ru.netology.data.DataHelper
+ ru.netology.data.DataHelper$AuthInfo
+ ru.netology.data.DataHelper$Card
+ ru.netology.data.DataHelper$VerificationCode
+ru/netology/steps/Steps.java
+ ru.netology.steps.Steps
+ru/netology/page/DashboardCardPage.java
+ ru.netology.page.DashboardCardPage
+ru/netology/page/LoginPage.java
+ ru.netology.page.LoginPage
+GradleTestRunner.java
+ GradleTestRunner
+ GradleTestRunner$GradleTestRunner1
+ru/netology/page/DashboardCardRepPage.java
+ ru.netology.page.DashboardCardRepPage
+ru/netology/page/VerificationPage.java
+ ru.netology.page.VerificationPage

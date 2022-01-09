@@ -1,0 +1,99 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 17597000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "InitialSetupHooks.setDriverProxy()"
+            }
+          },
+          {
+            "result": {
+              "duration": 45353600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "InitialSetupHooks.setScenario(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 237700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "InitialSetupHooks.setEnvironmentToTest()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Успешный логин и перевод средств с карты на карту",
+        "description": "",
+        "id": "логин-и-перевод-с-карты-на-карту;успешный-логин-и-перевод-средств-с-карты-на-карту",
+        "after": [
+          {
+            "result": {
+              "duration": 164000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "InitialSetupHooks.takeScreenshot(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 36360300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "InitialSetupHooks.closeWebDriver()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Сценарий",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "пользователь залогинен с именем \"vasya\" и паролем \"qwerty123\";",
+            "match": {},
+            "keyword": "Пусть "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 7,
+            "name": "он переводит \"5 000\" рублей с карты с номером \"5559 0000 0000 0002\" на свою \"1\" карту со страницы перевода средств;",
+            "match": {},
+            "keyword": "Когда "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8,
+            "name": "баланс его \"1\" карты из списка на главной странице должен стать \"15 000\" рублей.",
+            "match": {},
+            "keyword": "Тогда "
+          }
+        ]
+      }
+    ],
+    "name": "Логин и перевод с карты на карту",
+    "description": "",
+    "id": "логин-и-перевод-с-карты-на-карту",
+    "keyword": "Функционал",
+    "uri": "C:/Users/nikol/IdeaProjects/QAJavaLessons/Gradle/BDDAkita/build/resources/test/features/MoneyTransfer.feature",
+    "tags": []
+  }
+]
