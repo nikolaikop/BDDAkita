@@ -1,7 +1,8 @@
 ru/netology/data/DataHelper.java
  ru.netology.data.DataHelper
  ru.netology.data.DataHelper$AuthInfo
- ru.netology.data.DataHelper$Card
+ ru.netology.data.DataHelper$CardInfo
+ ru.netology.data.DataHelper$TransferAmount
  ru.netology.data.DataHelper$VerificationCode
 ru/netology/steps/Steps.java
  ru.netology.steps.Steps

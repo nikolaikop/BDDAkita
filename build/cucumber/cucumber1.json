@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 17597000,
+              "duration": 16566100,
               "status": "passed"
             },
             "match": {
@@ -15,7 +15,7 @@
           },
           {
             "result": {
-              "duration": 45353600,
+              "duration": 55952700,
               "status": "passed"
             },
             "match": {
@@ -24,7 +24,7 @@
           },
           {
             "result": {
-              "duration": 237700,
+              "duration": 536200,
               "status": "passed"
             },
             "match": {
@@ -39,7 +39,7 @@
         "after": [
           {
             "result": {
-              "duration": 164000,
+              "duration": 70600,
               "status": "passed"
             },
             "match": {
@@ -48,7 +48,7 @@
           },
           {
             "result": {
-              "duration": 36360300,
+              "duration": 677829900,
               "status": "passed"
             },
             "match": {
@@ -61,29 +61,72 @@
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 6484924400,
+              "status": "passed"
             },
             "line": 6,
             "name": "пользователь залогинен с именем \"vasya\" и паролем \"qwerty123\";",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "vasya",
+                  "offset": 33
+                },
+                {
+                  "val": "qwerty123",
+                  "offset": 51
+                }
+              ],
+              "location": "Steps.loginWithNameAndPassword(String,String)"
+            },
             "keyword": "Пусть "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 750995400,
+              "status": "passed"
             },
             "line": 7,
             "name": "он переводит \"5 000\" рублей с карты с номером \"5559 0000 0000 0002\" на свою \"1\" карту со страницы перевода средств;",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "5 000",
+                  "offset": 14
+                },
+                {
+                  "val": "5559 0000 0000 0002",
+                  "offset": 47
+                },
+                {
+                  "val": "1",
+                  "offset": 77
+                }
+              ],
+              "location": "Steps.transferMoneyFromSecondToFirstCard(String,String,String)"
+            },
             "keyword": "Когда "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 151594900,
+              "status": "passed"
             },
             "line": 8,
             "name": "баланс его \"1\" карты из списка на главной странице должен стать \"15 000\" рублей.",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 12
+                },
+                {
+                  "val": "15 000",
+                  "offset": 65
+                }
+              ],
+              "location": "Steps.checkBalanceFirstCard(String,String)"
+            },
             "keyword": "Тогда "
           }
         ]

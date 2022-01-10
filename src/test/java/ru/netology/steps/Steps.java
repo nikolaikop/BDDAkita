@@ -37,19 +37,19 @@ public class Steps {
 
 
     @Когда("^он переводит \"([^\"]*)\" рублей с карты с номером \"([^\"]*)\" на свою \"([^\"]*)\" карту со страницы перевода средств;$")
-    public void transferMoneyFromSecondToFirstCard(String amount, String fromCard, String firstCard) {
+    public void transferMoneyFromSecondToFirstCard(String sumRep, String fromCard, String firstCard) {
         val dashboardPage = (DashboardCardPage) scenario.getCurrentPage().appeared();
         scenario.setCurrentPage(dashboardPage.depositToFirstCard());
         val transferPage = (DashboardCardRepPage) scenario.getCurrentPage().appeared();
-        scenario.setCurrentPage(transferPage.refillCard(amount, fromCard));
+        scenario.setCurrentPage(transferPage.refillCard(sumRep, fromCard));
         scenario.getCurrentPage().appeared();
     }
 
 
     @Тогда("^баланс его \"([^\"]*)\" карты из списка на главной странице должен стать \"([^\"]*)\" рублей\\.$")
-    public void checkBalanceFirstCard(String getCard1, String expectedBalance) {
+    public void checkBalanceFirstCard(String firstCardNumber, String expectedBalance) {
         val dashboardPage = (DashboardCardPage) scenario.getCurrentPage().appeared();
-        val firstCardBalance = dashboardPage.getCardBalance(DataHelper.getCard1().getNumber());
+        val firstCardBalance = dashboardPage.getCardBalance(DataHelper.getFirstCardInfo().getCardNumber());
         Assertions.assertEquals(expectedBalance.replace(" ", ""), String.valueOf(firstCardBalance));
     }
 }

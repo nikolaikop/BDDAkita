@@ -25,9 +25,9 @@ public class DashboardCardRepPage extends AkitaPage {
     @FindBy(css = "[data-test-id='action-transfer']")
     private SelenideElement buttonRefill;
 
-    public DashboardCardPage refillCard(String sumRep, String fromRep) {
-        sum.setValue(sumRep);
-        fromWhich.setValue(fromRep);
+    public DashboardCardPage refillCard(String amount, String cardNumber) {
+        sum.setValue(amount);
+        fromWhich.setValue(cardNumber);
         buttonRefill.click();
         return page(DashboardCardPage.class);
     }
